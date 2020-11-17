@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:src="@drawable/saurav"
+        android:contentDescription="BackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <ListView
+        android:id="@+id/song_list_view"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"/>
+    <RelativeLayout
+        android:background="#CC000000"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/song_list_view">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:fontFamily="sans-serif-light"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Animals -- Maroon"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/play_pause_button"
+            android:src = "@drawable/baseline_play_arrow_white_48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+</RelativeLayout>
